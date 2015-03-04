@@ -20,10 +20,4 @@ class HelloWorldApp < Sinatra::Base
   head '/*' do
     request.body.read
   end
-  trace '/*' do
-    request.body.read
-  end
-  connect '/*' do
-    request.body.read
-  end
 end
