@@ -1,7 +1,8 @@
 require 'sinatra'
+require 'pry'
 
 class HelloWorldApp < Sinatra::Base
-  get '/' do
-    "Hello, world!"
+  post '/*' do
+    request.body.read
   end
 end
